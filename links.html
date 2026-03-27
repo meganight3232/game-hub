@@ -3,48 +3,63 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Game Hub - Links</title>
+  <title>Nova Hub - Links</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div id="loginOverlay" class="overlay">
-    <div class="login-box">
-      <h1>Enter Password</h1>
-      <p>This site is protected.</p>
+    <div class="login-panel">
+      <div class="login-glow"></div>
+      <h1>Nova Hub</h1>
+      <p class="login-sub">Enter password to continue</p>
       <input type="password" id="passwordInput" placeholder="Password" />
-      <button id="loginButton">Login</button>
+      <button id="loginButton">Unlock</button>
       <p id="loginMessage" class="error-msg"></p>
     </div>
   </div>
 
-  <header>
-    <h1>Game Hub</h1>
-    <nav>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-dot"></div>
+      <span>Nova Hub</span>
+    </div>
+
+    <nav class="nav">
       <a href="index.html">Home</a>
       <a href="games.html">Games</a>
-      <a href="links.html">Links</a>
-      <button id="logoutButton" class="logout-btn">Logout</button>
+      <a href="links.html" class="active">Links</a>
     </nav>
+
+    <button id="logoutButton" class="logout-btn">Logout</button>
   </header>
 
-  <main class="container">
-    <section class="hero">
-      <h2>Links</h2>
-      <p>Use this page for other allowed resources.</p>
+  <main class="page">
+    <section class="page-header">
+      <div>
+        <div class="hero-badge">Links</div>
+        <h1>Extra Resources</h1>
+        <p>Store any other allowed links here.</p>
+      </div>
     </section>
 
     <section class="card-grid">
-      <div class="card">
-        <h3>Example Link 1</h3>
-        <p>Replace this with your own link.</p>
-        <a class="card-link" href="https://example.com" target="_blank" rel="noopener noreferrer">Visit</a>
-      </div>
+      <article class="game-card">
+        <div class="card-top">
+          <span class="card-tag">Resource</span>
+        </div>
+        <h3>Example Link</h3>
+        <p>Useful site or tool you want quick access to.</p>
+        <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="open-btn">Visit</a>
+      </article>
 
-      <div class="card">
-        <h3>Example Link 2</h3>
-        <p>Replace this with your own link.</p>
-        <a class="card-link" href="https://example.org" target="_blank" rel="noopener noreferrer">Visit</a>
-      </div>
+      <article class="game-card">
+        <div class="card-top">
+          <span class="card-tag">Tool</span>
+        </div>
+        <h3>Another Link</h3>
+        <p>Replace this with one of your own links.</p>
+        <a href="https://example.org" target="_blank" rel="noopener noreferrer" class="open-btn">Visit</a>
+      </article>
     </section>
   </main>
 
