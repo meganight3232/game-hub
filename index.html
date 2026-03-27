@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game Hub - Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="loginOverlay" class="overlay">
+    <div class="login-box">
+      <h1>Enter Password</h1>
+      <p>This site is protected.</p>
+      <input type="password" id="passwordInput" placeholder="Password" />
+      <button id="loginButton">Login</button>
+      <p id="loginMessage" class="error-msg"></p>
+    </div>
+  </div>
+
+  <header>
+    <h1>Game Hub</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="games.html">Games</a>
+      <a href="links.html">Links</a>
+      <button id="logoutButton" class="logout-btn">Logout</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Welcome</h2>
+      <p>
+        This is your starter website. You can use it as a clean password-protected
+        hub with multiple pages.
+      </p>
+    </section>
+
+    <section class="card-grid">
+      <div class="card">
+        <h3>Home Page</h3>
+        <p>Simple landing page for your site.</p>
+      </div>
+      <div class="card">
+        <h3>Games Page</h3>
+        <p>Put your approved game links or embeds here later.</p>
+      </div>
+      <div class="card">
+        <h3>Links Page</h3>
+        <p>Use this page for other allowed site links.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
