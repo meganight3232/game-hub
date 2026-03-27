@@ -7,9 +7,10 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <!-- Login -->
   <div id="loginOverlay" class="overlay">
     <div class="login-panel">
-      <div class="login-glow"></div>
       <h1>Nova Hub</h1>
       <p class="login-sub">Enter password to continue</p>
       <input type="password" id="passwordInput" placeholder="Password" />
@@ -18,6 +19,7 @@
     </div>
   </div>
 
+  <!-- Top bar -->
   <header class="topbar">
     <div class="brand">
       <div class="brand-dot"></div>
@@ -33,34 +35,95 @@
     <button id="logoutButton" class="logout-btn">Logout</button>
   </header>
 
+  <!-- Main -->
   <main class="page">
-    <section class="page-header">
-      <div>
-        <div class="hero-badge">Links</div>
-        <h1>Extra Resources</h1>
-        <p>Store any other allowed links here.</p>
+
+    <!-- 🔥 MAIN FEATURED LINK -->
+    <section style="margin-bottom:40px;">
+      <div class="hero-badge">Featured</div>
+      
+      <div class="game-card" style="padding:30px; transform:scale(1.02);">
+        <h2 style="margin-bottom:10px;">Main Site</h2>
+        <p style="margin-bottom:20px;">
+          Your primary site. Click below to open.
+        </p>
+
+        <a href="https://sites.google.com/view/wolfunblock/home"
+           target="_blank"
+           class="primary-btn"
+           style="font-size:1.1rem; padding:14px 22px;">
+          Open Main Site
+        </a>
       </div>
     </section>
 
+    <!-- 🔻 PLACEHOLDERS -->
     <section class="card-grid">
+
+      <!-- 10 placeholders -->
+
       <article class="game-card">
-        <div class="card-top">
-          <span class="card-tag">Resource</span>
-        </div>
-        <h3>Example Link</h3>
-        <p>Useful site or tool you want quick access to.</p>
-        <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="open-btn">Visit</a>
+        <h3>Link Slot 1</h3>
+        <p>Add your link here later.</p>
+        <a href="LINK_1" target="_blank" class="open-btn">Open</a>
       </article>
 
       <article class="game-card">
-        <div class="card-top">
-          <span class="card-tag">Tool</span>
-        </div>
-        <h3>Another Link</h3>
-        <p>Replace this with one of your own links.</p>
-        <a href="https://example.org" target="_blank" rel="noopener noreferrer" class="open-btn">Visit</a>
+        <h3>Link Slot 2</h3>
+        <p>Add your link here later.</p>
+        <a href="LINK_2" target="_blank" class="open-btn">Open</a>
       </article>
+
+      <article class="game-card">
+        <h3>Link Slot 3</h3>
+        <p>Add your link here later.</p>
+        <a href="LINK_3" target="_blank" class="open-btn">Open</a>
+      </article>
+
+      <article class="game-card">
+        <h3>Link Slot 4</h3>
+        <p>Add your link here later.</p>
+        <a href="LINK_4" target="_blank" class="open-btn">Open</a>
+      </article>
+
+      <article class="game-card">
+        <h3>Link Slot 5</h3>
+        <p>Add your link here later.</p>
+        <a href="LINK_5" target="_blank" class="open-btn">Open</a>
+      </article>
+
+      <article class="game-card">
+        <h3>Link Slot 6</h3>
+        <p>Add your link here later.</p>
+        <a href="LINK_6" target="_blank" class="open-btn">Open</a>
+      </article>
+
+      <article class="game-card">
+        <h3>Link Slot 7</h3>
+        <p>Add your link here later.</p>
+        <a href="LINK_7" target="_blank" class="open-btn">Open</a>
+      </article>
+
+      <article class="game-card">
+        <h3>Link Slot 8</h3>
+        <p>Add your link here later.</p>
+        <a href="LINK_8" target="_blank" class="open-btn">Open</a>
+      </article>
+
+      <article class="game-card">
+        <h3>Link Slot 9</h3>
+        <p>Add your link here later.</p>
+        <a href="LINK_9" target="_blank" class="open-btn">Open</a>
+      </article>
+
+      <article class="game-card">
+        <h3>Link Slot 10</h3>
+        <p>Add your link here later.</p>
+        <a href="LINK_10" target="_blank" class="open-btn">Open</a>
+      </article>
+
     </section>
+
   </main>
 
   <script src="script.js"></script>
