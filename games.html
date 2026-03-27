@@ -3,68 +3,121 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Game Hub - Games</title>
+  <title>Nova Hub - Games</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <!-- Login Overlay -->
   <div id="loginOverlay" class="overlay">
-    <div class="login-box">
-      <h1>Enter Password</h1>
+    <div class="login-panel">
+      <h1>Nova Hub</h1>
+      <p class="login-sub">Enter password to continue</p>
       <input type="password" id="passwordInput" placeholder="Password" />
-      <button id="loginButton">Login</button>
+      <button id="loginButton">Unlock</button>
       <p id="loginMessage" class="error-msg"></p>
     </div>
   </div>
 
-  <header>
-    <h1>Game Hub</h1>
-    <nav>
+  <!-- Top Bar -->
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-dot"></div>
+      <span>Nova Hub</span>
+    </div>
+
+    <nav class="nav">
       <a href="index.html">Home</a>
-      <a href="games.html">Games</a>
+      <a href="games.html" class="active">Games</a>
       <a href="links.html">Links</a>
-      <button id="logoutButton" class="logout-btn">Logout</button>
     </nav>
+
+    <button id="logoutButton" class="logout-btn">Logout</button>
   </header>
 
-  <main class="container">
-    <section class="hero">
-      <h2>Games</h2>
-      <p>Click a site below to open games.</p>
+  <!-- Main -->
+  <main class="page">
+    <section class="page-header">
+      <div>
+        <div class="hero-badge">Games</div>
+        <h1>Game Library</h1>
+        <p>Replace each card with your own links.</p>
+      </div>
     </section>
 
     <section class="card-grid">
 
-      <div class="card">
-        <h3>Game Site 1</h3>
-        <p>Large collection of browser games.</p>
-        <a class="card-link" href="https://sites.google.com/site/unblockedwtf/" target="_blank">
-          Open
-        </a>
-      </div>
+      <!-- CARD TEMPLATE x10 -->
 
-      <div class="card">
-        <h3>Game Site 2</h3>
-        <p>Compilation of different games.</p>
-        <a class="card-link" href="https://sites.google.com/site/thegamecompilation/home" target="_blank">
-          Open
-        </a>
-      </div>
+      <article class="game-card">
+        <div class="card-top"><span class="card-tag">Game</span></div>
+        <h3>Game Slot 1</h3>
+        <p>Description here.</p>
+        <a href="https://sites.google.com/site/unblockedwtf/" target="_blank" class="open-btn">Open</a>
+      </article>
 
-      <div class="card">
-        <h3>Game Site 3</h3>
-        <p>Rewind-style game list.</p>
-        <a class="card-link" href="https://sites.google.com/site/unblockedgamestop/rewind" target="_blank">
-          Open
-        </a>
-      </div>
+      <article class="game-card">
+        <div class="card-top"><span class="card-tag">Game</span></div>
+        <h3>Game Slot 2</h3>
+        <p>Description here.</p>
+        <a href="https://sites.google.com/site/thegamecompilation/home" target="_blank" class="open-btn">Open</a>
+      </article>
 
-      <div class="card">
-        <h3>Game Site 4</h3>
-        <p>Huge list of browser games.</p>
-        <a class="card-link" href="https://sites.google.com/view/classroom66?authuser=0" target="_blank">
-          Open
-        </a>
-      </div>
+      <article class="game-card">
+        <div class="card-top"><span class="card-tag">Game</span></div>
+        <h3>Game Slot 3</h3>
+        <p>Description here.</p>
+        <a href="https://sites.google.com/site/unblockedgamestop/rewind" target="_blank" class="open-btn">Open</a>
+      </article>
+
+      <article class="game-card">
+        <div class="card-top"><span class="card-tag">Game</span></div>
+        <h3>Game Slot 4</h3>
+        <p>Description here.</p>
+        <a href="https://sites.google.com/view/classroom66?authuser=0" target="_blank" class="open-btn">Open</a>
+      </article>
+
+      <article class="game-card">
+        <div class="card-top"><span class="card-tag">Game</span></div>
+        <h3>Game Slot 5</h3>
+        <p>Description here.</p>
+        <a href="LINK_5" target="_blank" class="open-btn">Open</a>
+      </article>
+
+      <article class="game-card">
+        <div class="card-top"><span class="card-tag">Game</span></div>
+        <h3>Game Slot 6</h3>
+        <p>Description here.</p>
+        <a href="LINK_6" target="_blank" class="open-btn">Open</a>
+      </article>
+
+      <article class="game-card">
+        <div class="card-top"><span class="card-tag">Game</span></div>
+        <h3>Game Slot 7</h3>
+        <p>Description here.</p>
+        <a href="LINK_7" target="_blank" class="open-btn">Open</a>
+      </article>
+
+      <article class="game-card">
+        <div class="card-top"><span class="card-tag">Game</span></div>
+        <h3>Game Slot 8</h3>
+        <p>Description here.</p>
+        <a href="LINK_8" target="_blank" class="open-btn">Open</a>
+      </article>
+
+      <article class="game-card">
+        <div class="card-top"><span class="card-tag">Game</span></div>
+        <h3>Game Slot 9</h3>
+        <p>Description here.</p>
+        <a href="LINK_9" target="_blank" class="open-btn">Open</a>
+      </article>
+
+      <article class="game-card">
+        <div class="card-top"><span class="card-tag">Game</span></div>
+        <h3>Game Slot 10</h3>
+        <p>Description here.</p>
+        <a href="LINK_10" target="_blank" class="open-btn">Open</a>
+      </article>
 
     </section>
   </main>
