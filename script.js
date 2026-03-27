@@ -1,54 +1,55 @@
 const PASSWORD = "school";
 
-function checkAccess() {
-  const loggedIn = localStorage.getItem("siteAccess") === "granted";
+function lockSiteIfNeeded() {
   const overlay = document.getElementById("loginOverlay");
+  const access = localStorage.getItem("novaHubAccess");
 
-  if (!loggedIn && overlay) {
+  if (overlay && access !== "granted") {
     overlay.classList.add("active");
   }
 }
 
-function login() {
+function unlockSite() {
   const input = document.getElementById("passwordInput");
   const message = document.getElementById("loginMessage");
+  const overlay = document.getElementById("loginOverlay");
 
-  if (!input || !message) return;
+  if (!input || !message || !overlay) return;
 
   if (input.value === PASSWORD) {
-    localStorage.setItem("siteAccess", "granted");
+    localStorage.setItem("novaHubAccess", "granted");
+    overlay.classList.remove("active");
     message.textContent = "";
-    const overlay = document.getElementById("loginOverlay");
-    if (overlay) overlay.classList.remove("active");
+    input.value = "";
   } else {
-    message.textContent = "Wrong password.";
+    message.textContent = "Incorrect password.";
   }
 }
 
-function logout() {
-  localStorage.removeItem("siteAccess");
+function logoutSite() {
+  localStorage.removeItem("novaHubAccess");
   window.location.href = "index.html";
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  checkAccess();
+  lockSiteIfNeeded();
 
   const loginButton = document.getElementById("loginButton");
   const logoutButton = document.getElementById("logoutButton");
   const passwordInput = document.getElementById("passwordInput");
 
   if (loginButton) {
-    loginButton.addEventListener("click", login);
+    loginButton.addEventListener("click", unlockSite);
   }
 
   if (logoutButton) {
-    logoutButton.addEventListener("click", logout);
+    logoutButton.addEventListener("click", logoutSite);
   }
 
   if (passwordInput) {
-    passwordInput.addEventListener("keydown", (e) => {
-      if (e.key === "Enter") {
-        login();
+    passwordInput.addEventListener("keydown", (event) => {
+      if (event.key === "Enter") {
+        unlockSite();
       }
     });
   }
