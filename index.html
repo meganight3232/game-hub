@@ -3,51 +3,63 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Game Hub - Home</title>
+  <title>Nova Hub</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div id="loginOverlay" class="overlay">
-    <div class="login-box">
-      <h1>Enter Password</h1>
-      <p>This site is protected.</p>
+    <div class="login-panel">
+      <div class="login-glow"></div>
+      <h1>Nova Hub</h1>
+      <p class="login-sub">Enter password to continue</p>
       <input type="password" id="passwordInput" placeholder="Password" />
-      <button id="loginButton">Login</button>
+      <button id="loginButton">Unlock</button>
       <p id="loginMessage" class="error-msg"></p>
     </div>
   </div>
 
-  <header>
-    <h1>Game Hub</h1>
-    <nav>
-      <a href="index.html">Home</a>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-dot"></div>
+      <span>Nova Hub</span>
+    </div>
+
+    <nav class="nav">
+      <a href="index.html" class="active">Home</a>
       <a href="games.html">Games</a>
       <a href="links.html">Links</a>
-      <button id="logoutButton" class="logout-btn">Logout</button>
     </nav>
+
+    <button id="logoutButton" class="logout-btn">Logout</button>
   </header>
 
-  <main class="container">
+  <main class="page">
     <section class="hero">
-      <h2>Welcome</h2>
+      <div class="hero-badge">Smooth • Dark • Minimal</div>
+      <h1>Your private game hub</h1>
       <p>
-        This is your starter website. You can use it as a clean password-protected
-        hub with multiple pages.
+        A sleek starter website with a password gate, smooth animations,
+        and separate pages for games and links.
       </p>
+
+      <div class="hero-actions">
+        <a href="games.html" class="primary-btn">Open Games</a>
+        <a href="links.html" class="secondary-btn">Open Links</a>
+      </div>
     </section>
 
-    <section class="card-grid">
-      <div class="card">
-        <h3>Home Page</h3>
-        <p>Simple landing page for your site.</p>
+    <section class="stats-grid">
+      <div class="glass-card">
+        <h3>Clean UI</h3>
+        <p>Modern layout with a smooth dark look.</p>
       </div>
-      <div class="card">
-        <h3>Games Page</h3>
-        <p>Put your approved game links or embeds here later.</p>
+      <div class="glass-card">
+        <h3>Password Gate</h3>
+        <p>Simple front-end lock for testing your site.</p>
       </div>
-      <div class="card">
-        <h3>Links Page</h3>
-        <p>Use this page for other allowed site links.</p>
+      <div class="glass-card">
+        <h3>Easy to Edit</h3>
+        <p>Add your own allowed links in seconds.</p>
       </div>
     </section>
   </main>
